@@ -10,7 +10,7 @@
 }
 
 .nav-bar:hover{
-    background-color: #ffffff;
+    background-color: #ffff;
     transition: 0.8s ease;
 }
 
@@ -27,13 +27,13 @@
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #9AA9A2;
+    transition: 1s;
 }
 
 .link:hover{
     background-color: #9AA9A2;
     color: #222B28;
     transition: 1s;
-
 }
 
 #logo{

@@ -7,11 +7,13 @@
     <title>Leitura em Declínio</title>
 
     <script src="javascript/banner.js" async></script>
+    <script  src="javascript/carrossel.js" ></script>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav-bar.css">
     <link rel="stylesheet" href="css/introducao.css">
     <link rel="stylesheet" href="css/artigo.css">
+    <link rel="stylesheet" href="css/carrossel.css">
 </head>
 
 <body>
@@ -109,8 +111,35 @@
     </section>
     <!-- Fim Artigo -->
 
-    <!-- Galeria -->
+    <!-- linha de separação-->
+    <p class="container linha-separacao"></p>
+    <!-- Fim linha de separação-->
 
+    <!-- Galeria -->
+    <section class="container carrossel">
+        <button id="anterior" onclick="ShowImg(-1)"><img src="" alt=""></button>
+        <button id="proximo" onclick="ShowImg(1)"ss><img src="" alt=""></button>
+        <div class="place-carrossel">
+            <div class="imgs">
+                <img src="imagens/tete-carrossel.jpg" alt="">
+            </div>
+            <div class="imgs">
+                <img src="" alt="">
+            </div>
+            <div class="imgs">
+                <img src="" alt="">
+            </div>
+            <div class="imgs">
+                <img src="" alt="">
+            </div>
+            <div class="imgs">
+                <img src="" alt="">
+            </div>
+            <div class="imgs">
+                <img src="imagens/tete-carrossel.jpg" alt="">
+            </div>
+        </div>
+    </section>
     <!-- Fim Galeria -->
 
 </body>

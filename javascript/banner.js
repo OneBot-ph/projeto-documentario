@@ -16,7 +16,7 @@ function ShowVideo() {
         nomeDocumentario.style.display = "none";
         
         btnRetornar.style.display = "block";
-        document.getElementById("btn-show").style.display = "none";
+        btn.style.display = "none";
         video.style.display = "block";
     }else{
         banner[0].style.display = "block";

@@ -71,12 +71,14 @@
     border-radius: 100%;
     border-style: none;
     opacity: 0.5;
+    transition: 0.7s ease;
 }
 
 #btn-show img{
     width: 100%;
     background-color: #fff;
     border-radius: 45%;
+
 }
 
 #btn-show:hover{
@@ -96,6 +98,7 @@
     border-radius: 8px;
     border-style: none;
     font-family: monospace;
+    transition: 0.5s ease;
 }
 
 #btn-retornar:hover{
