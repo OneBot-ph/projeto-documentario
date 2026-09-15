@@ -2,7 +2,7 @@
     margin-bottom: 24px;
     overflow: hidden;
     position: relative;
-    
+        
 }
 
 .place-carrossel{
@@ -13,6 +13,7 @@
 }
 
 .place-carrossel .imgs{
+
     flex: 0 0 30%;
     height: 100%;
 
@@ -20,6 +21,7 @@
 }
 
 .imgs img{
+    transform: translateX(0);
     width: 100%;
     height: 100%;
 }
