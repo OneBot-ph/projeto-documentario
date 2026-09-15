@@ -1,0 +1,59 @@
+.container-curiosidades{
+    width: 100%;
+    height: 700px;
+    display: block;
+}
+
+.curiosidades-titulo{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+ width: 400px;
+ height: 254px;
+ border-radius: 30px;
+ background: #212121;
+ box-shadow: 15px 15px 30px rgb(25, 25, 25),
+             -15px -15px 30px rgb(60, 60, 60);
+transition: 0.5s ease-out;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+flex-direction: column;
+}
+
+.card p{
+   color: #212121;
+   margin: 10px;
+}
+
+.card p:hover{
+    z-index: 1;
+}
+
+.card h1{
+    color: #fff;
+    position: absolute;
+    
+}
+
+.card h1:hover{
+    color: transparent;
+}
+
+
+.card:hover{
+    background-color: #fff;
+    transition: 0.5s ease;
+    
+}
+
