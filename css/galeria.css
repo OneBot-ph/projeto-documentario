@@ -1,0 +1,60 @@
+.galeria-carrossel{
+    position: relative;
+
+}
+
+.galeria-carrossel img{
+    vertical-align: middle;
+    width: 100%;
+}
+
+.slide-img{
+    display: none;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+#proximo,
+#anterior{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: gray;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#proximo{
+    right: 0;
+}
+
+.atalho-img{
+    opacity: 0.8;
+}
+
+.ativo,
+.atalho-img:hover{
+    opacity: 1;
+}
+
+.atalho:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.atalho-item{
+    float: left;
+    width: 20%;
+}
+

@@ -1,0 +1,36 @@
+.place-carrossel{
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    padding: 25px;
+    border-radius: 16px;
+
+    margin-bottom: 24px;
+    mask: linear-gradient(to right, transparent, #fff 2%, #fff 98%, transparent);
+}
+
+.grid-imgs{
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    animation: carrossel-imgs 45s linear infinite;
+}
+
+.img img{
+    width: 400px;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 16px;
+
+}
+
+@keyframes carrossel-imgs{
+    from{
+        translate: 0;
+    }
+    to{
+        translate: calc(-50% - 15px)
+    }
+    
+}
