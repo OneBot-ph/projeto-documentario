@@ -40,12 +40,13 @@
 
 .grid-colaboradores {
     position: absolute;
-    left: 25%;
-    right: 25%;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 2%;
     display: flex;
     justify-content: space-between;
-
+    gap: 24px;
+    
 }
 
 .grid-colaboradores a {
@@ -70,6 +71,7 @@
     background-color: #4a7766;
     opacity: 1;
     transition: 0.5s;
+    transform: translateY(-3px);
 }
 
 
