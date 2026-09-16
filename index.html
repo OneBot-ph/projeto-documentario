@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leitura em Declínio</title>
 
+    <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+
+
     <script src="javascript/banner.js" async></script>
     <script src="javascript/carrossel.js" defer></script>
 
@@ -23,19 +26,17 @@
 
     <!-- Nav Bar-->
     <section class="nav-bar">
-        <a id="logo" href="#documentario-video">
-            <img src="" alt="">
-        </a>
+
         <a class="link" href="#sobreDocumentario">
             <h2>Sobre o documentário</h2>
         </a>
-        <a class="link" href="#">
+        <a class="link" href="#galeria">
             <h2>Galeria</h2>
         </a>
-        <a class="link" href="#">
+        <a class="link" href="#curiosidades">
             <h2>Curiosidades</h2>
         </a>
-        <a class="link" href="#">
+        <a class="link" href="html/contatos.html">
             <h2>Contatos</h2>
         </a>
     </section>
@@ -43,18 +44,18 @@
 
     <!-- Introdução -->
     <section class="place-introducao">
-        <button id="btn-show" onclick="ShowVideo()"><img src="imagens/play.png" alt=""></button>
-        <button id="btn-retornar" onclick="ShowVideo()">retornar para o banner</button>
-        <video id="documentario" controls>
+
+        <button id="btn-retornar" onclick="ShowVideo()">retornar</button>
+
+        <video id="documentario">
             <source src="videos/documentario.mp4" type="video/mp4">
         </video>
 
-        <div class="banner">
 
-            <img src="" alt="">
+        <div id="logo-documentario">
+            <img src="imagens/Group 6 .png" alt="" id="btn-show" onclick="ShowVideo()">
         </div>
-        <div id="nome-documentario">
-            <h1>Declinio da Leitura Paulista</h1>
+        <div id="grid-color">
         </div>
         <div class="grid-colaboradores">
             <a href="">
@@ -72,14 +73,17 @@
             <a href="">
                 <p>Alysson</p>
             </a>
-
         </div>
+
     </section>
     <!-- Fim Introdução-->
 
     <!-- Artigo -->
-    <section class="container" id="sobreDocumentario">
-        <h1>Declinio da literatura</h1>
+    <section id="sobreDocumentario"></section>
+    <br>
+
+    <section class="container">
+        <h1>Declinio da Leitura</h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia aliquid maxime doloribus praesentium
             excepturi culpa unde non sapiente eius quaerat! Temporibus possimus iure minima vero. Nulla quisquam
@@ -114,46 +118,44 @@
     </section>
     <!-- Fim Artigo -->
 
-    <!-- linha de separação-->
-    <p class="container linha-separacao"></p>
-    <!-- Fim linha de separação-->
-
-    <section class="container-curiosidades">
-
-        <h2 class="curiosidades-titulo">Curiosidades</h2>
+    <section id="curiosidades" class="container-curiosidades">
+        <h1 class="curiosidades-titulo">Curiosidades</h1>
 
         <section class="container-cards">
             <div class="container-cards">
                 <div class="card">
                     <div id="principal">
-                        <h1>TITULO</h1>
+                        <img src="imagens/imagem5.png" alt="">
+                        <h2>TITULO</h2>
                     </div>
 
                     <div id="secundario">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ut ratione reiciendis,
-                            recusandae, suscipit quos excepturi aut expedita quidem sequi quae velit rerum doloribus
-                            consequuntur officiis odit sunt nesciunt vel?
+                            A 6ª edição do estudo revela que 53% dos brasileiros não leram nenhum trecho de livro nos
+                            três meses anteriores.
                         </p>
                     </div>
                 </div>
                 <div class="card">
                     <div id="principal">
-                        <h1>TITULO</h1>
+                        <img src="imagens/dentro_da_biblioteca.jpg" alt="">
+                        <h2>TITULO</h2>
                     </div>
+
 
                     <div id="secundario">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ut ratione reiciendis,
-                            recusandae, suscipit quos excepturi aut expedita quidem sequi quae velit rerum doloribus
-                            consequuntur officiis odit sunt nesciunt vel?
+                            Entre 2019 e 2024, o Brasil perdeu cerca de 6,7 milhões de leitores de livros em todas as
+                            regiões.
                         </p>
                     </div>
                 </div>
                 <div class="card">
                     <div id="principal">
-                        <h1>TITULO</h1>
+                        <img src="imagens/cartazes.jpg" alt="">
+                        <h2>TITULO</h2>
                     </div>
+
 
                     <div id="secundario">
                         <p>
@@ -164,14 +166,15 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="container-cards">
             <div class="container-cards">
                 <div class="card">
                     <div id="principal">
-                        <h1>TITULO</h1>
+                        <img src="imagens/imagem1.png" alt="">
+                        <h2>TITULO</h2>
                     </div>
+
 
                     <div id="secundario">
                         <p>
@@ -183,8 +186,10 @@
                 </div>
                 <div class="card">
                     <div id="principal">
-                        <h1>TITULO</h1>
+                        <img src="imagens/imagem1.png" alt="">
+                        <h2>TITULO</h2>
                     </div>
+
 
                     <div id="secundario">
                         <p>
@@ -196,8 +201,10 @@
                 </div>
                 <div class="card">
                     <div id="principal">
-                        <h1>TITULO</h1>
+                        <img src="imagens/imagem1.png" alt="">
+                        <h2>TITULO</h2>
                     </div>
+
 
                     <div id="secundario">
                         <p>
@@ -212,52 +219,104 @@
         </section>
     </section>
 
-    <!-- linha de separação-->
-    <p class="container linha-separacao"></p>
-    <!-- Fim linha de separação-->
-
     <!-- Galeria -->
-    <section class="container carrossel">
+    <section id="galeria" class="container carrossel">
 
         <div class="galeria-carrossel">
 
-            <button id="anterior" onclick="ProximoSlide(1)"></button>
-            <button id="proximo" onclick="ProximoSlide(-1)"></button>
+            <button id="proximo" onclick="ProximoSlide(1)"><img src="imagens/play.png" alt=""></button>
+            <button id="anterior" onclick="ProximoSlide(-1)"><img src="imagens/play.png" alt=""></button>
 
             <div class="slide-img">
-                <img class="img" src="imagens/img_5terre_wide.jpg" alt="">
+                <img class="img" src="imagens/biblioteca.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img class="img" src="imagens/dentro_da_biblioteca.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img class="img" src="imagens/estantes.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img class="img" src="imagens/frente_Biblioteca.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img class="img" src="imagens/cartazes.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img class="img" src="imagens/imagem5.png" alt="">
             </div>
 
             <div class="slide-img">
-                <img class="img" src="imagens/img_snow_wide.jpg" alt="">
+                <img class="img" src="imagens/imagem1.png" alt="">
             </div>
-
             <div class="slide-img">
-                <img class="img" src="imagens/img_woods_wide.jpg" alt="">
+                <img class="img" src="imagens/imagem2.png" alt="">
+            </div>
+            <div class="slide-img">
+                <img class="img" src="imagens/imagem3.png" alt="">
+            </div>
+            <div class="slide-img">
+                <img class="img" src="imagens/imagem4.png" alt="">
+            </div>
+            <div class="slide-img">
+                <img class="img" src="imagens/banner.jpg" alt="">
             </div>
 
             <div class="atalho">
                 <div class="atalho-item cursor">
-                    <img class="atalho-img" src="imagens/img_woods_wide.jpg" alt="" onclick="Atalho(0)">
+                    <img class="atalho-img" src="imagens/biblioteca.jpg" alt="" onclick="Atalho(1)">
                 </div>
                 <div class="atalho-item cursor">
-                    <img class="atalho-img" src="imagens/img_5terre_wide.jpg" alt="" onclick="Atalho(1)">
+                    <img class="atalho-img" src="imagens/dentro_da_biblioteca.jpg" alt="" onclick="Atalho(2)">
                 </div>
 
                 <div class="atalho-item cursor">
-                    <img class="atalho-img" src="imagens/img_snow_wide.jpg" alt="" onclick="Atalho(2)">
+                    <img class="atalho-img" src="imagens/estantes.jpg" alt="" onclick="Atalho(3)">
                 </div>
 
+
+                <div class="atalho-item cursor">
+                    <img class="atalho-img" src="imagens/frente_Biblioteca.jpg" alt="" onclick="Atalho(4)">
+                </div>
+
+
+                <div class="atalho-item cursor">
+                    <img class="atalho-img" src="imagens/cartazes.jpg" alt="" onclick="Atalho(5)">
+                </div>
+
+
+                <div class="atalho-item cursor">
+                    <img class="atalho-img" src="imagens/imagem5.png" alt="" onclick="Atalho(6)">
+                </div>
+
+                <div class="atalho-item cursor">
+                    <img class="atalho-img" src="imagens/imagem1.png" alt="" onclick="Atalho(7)">
+                </div>
+                <div class="atalho-item cursor">
+                    <img class="atalho-img" src="imagens/imagem2.png" alt="" onclick="Atalho(8)">
+                </div>
+                <div class="atalho-item cursor">
+                    <img class="atalho-img" src="imagens/imagem3.png" alt="" onclick="Atalho(9)">
+                </div>
+                <div class="atalho-item cursor">
+                    <img class="atalho-img" src="imagens/imagem4.png" alt="" onclick="Atalho(10)">
+                </div>
+                <div class="atalho-item cursor">
+                    <img class="atalho-img" src="imagens/banner.jpg" alt="" onclick="Atalho(11)">
+                </div>
             </div>
-
-        </div>
     </section>
     <!-- Fim Galeria -->
 
     <!-- Footer -->
 
     <footer class="footer">
+        <div class="agradecimentos">
+            <h2>produzido por Transforma-se</h2>
+        </div>
+        <div class="colaboradores">
 
+        </div>
     </footer>
 
     <!-- Fim footer -->
